@@ -1,0 +1,10 @@
+[package]
+name = "scratch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.14"
+parity-ws = {git="https://github.com/Polkadex-Substrate/ws-rs.git",branch="sgx-fortanix"}
