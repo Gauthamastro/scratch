@@ -1,10 +1,10 @@
-[package]
-name = "scratch"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+members = ["enclave", "runner"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[patch.crates-io]
+mio = { git = "https://github.com/mzohreva/mio", branch = "mz/sgx-port-0.7.6" }
 
-[dependencies]
-log = "0.4.14"
-parity-ws = {git="https://github.com/Polkadex-Substrate/ws-rs.git",branch="sgx-fortanix"}
+enclave-runner = { git = "https://github.com/fortanix/rust-sgx", branch = "mz/async-usercalls" }
+sgxs = { git = "https://github.com/fortanix/rust-sgx", branch = "mz/async-usercalls" }
+sgx-isa = { git = "https://github.com/fortanix/rust-sgx", branch = "mz/async-usercalls" }
+sgxs-loaders = { git = "https://github.com/fortanix/rust-sgx", branch = "mz/async-usercalls" }
