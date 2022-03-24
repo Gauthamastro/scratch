@@ -1,0 +1,1 @@
+ftxsgx-elf2sgxs enclave --heap-size 0x300000 --stack-size 0x300000 --threads 10 --debug

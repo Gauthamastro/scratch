@@ -1,9 +1,7 @@
 [workspace]
-members = ["enclave", "runner"]
+members = ["enclave", "client","runner"]
 
 [patch.crates-io]
-mio = { git = "https://github.com/mzohreva/mio", branch = "mz/sgx-port-0.7.6" }
-
 enclave-runner = { git = "https://github.com/fortanix/rust-sgx", branch = "mz/async-usercalls" }
 sgxs = { git = "https://github.com/fortanix/rust-sgx", branch = "mz/async-usercalls" }
 sgx-isa = { git = "https://github.com/fortanix/rust-sgx", branch = "mz/async-usercalls" }
